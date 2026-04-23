@@ -1,0 +1,184 @@
+```html
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay's Handy Help | Handyman in Haltom City & Surrounding Areas</title>
+    <meta name="description" content="Budget friendly service done right! Serving Haltom City, Watauga, Keller. From repairs to odd jobs. Call Jay at 682-217-5061 for a free estimate.">
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons for graphics -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e3a8a', // Deep Blue
+                        secondary: '#ea580c', // Bright Orange for Call-to-actions
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background-color: #1e3a8a;
+            background-image: linear-gradient(rgba(30, 58, 138, 0.9), rgba(30, 58, 138, 0.9)), url('https://images.unsplash.com/photo-1581141849291-1125f53b5142?auto=format&fit=crop&q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased bg-gray-50">
+
+    <!-- Mobile-friendly Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50 top-0">
+        <div class="max-w-7xl mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center gap-2">
+                    <i data-lucide="wrench" class="h-6 w-6 text-secondary"></i>
+                    <span class="font-bold text-xl text-primary tracking-tight">Jay's Handy Help</span>
+                </div>
+                <!-- Tap to call button for mobile -->
+                <a href="tel:6822175061" class="bg-secondary text-white px-4 py-2 rounded-lg font-bold shadow-md flex items-center gap-2 active:bg-orange-700">
+                    <i data-lucide="phone" class="h-4 w-4"></i>
+                    <span class="hidden sm:inline">682-217-5061</span>
+                    <span class="sm:hidden">Call</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-bg mt-[60px] text-white py-20 px-4 text-center">
+        <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight mb-4">
+            Budget Friendly Service <br/><span class="text-secondary">Done Right!</span>
+        </h1>
+        <p class="text-lg sm:text-xl max-w-2xl mx-auto font-light mb-8 text-gray-200">
+            From repairs to odd jobs. Home grown in Haltom City, Watauga, Keller & surrounding areas.
+        </p>
+        <a href="tel:6822175061" class="inline-block bg-secondary text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg active:bg-orange-700 w-full sm:w-auto">
+            Get a Free Estimate
+        </a>
+    </header>
+
+    <!-- Services Section -->
+    <section class="py-12 px-4 max-w-7xl mx-auto">
+        <div class="text-center mb-10">
+            <h2 class="text-3xl font-extrabold text-primary">Services Offered</h2>
+            <p class="mt-2 text-gray-600">I can work with your budget within reason. If you need help with anything, just ask!</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- Remodeling & Construction -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                <div class="flex items-center gap-3 mb-4 text-primary">
+                    <i data-lucide="hammer" class="h-6 w-6"></i>
+                    <h3 class="text-xl font-bold">Remodeling & Rehab</h3>
+                </div>
+                <ul class="space-y-2 text-gray-600">
+                    <li>• Demo, rehab & reconstruction</li>
+                    <li>• Drywall, tape & bed, painting</li>
+                    <li>• Insulation & light electrical</li>
+                    <li>• Room additions & carpentry</li>
+                </ul>
+            </div>
+
+            <!-- Landscaping & Outdoors -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                <div class="flex items-center gap-3 mb-4 text-primary">
+                    <i data-lucide="trees" class="h-6 w-6"></i>
+                    <h3 class="text-xl font-bold">Outdoors & Landscaping</h3>
+                </div>
+                <ul class="space-y-2 text-gray-600">
+                    <li>• Mowing, edging & tree trimming</li>
+                    <li>• Hardscaping & garden/retainer walls</li>
+                    <li>• Irrigation & pool pads</li>
+                    <li>• Shed construction</li>
+                </ul>
+            </div>
+
+            <!-- Flooring -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                <div class="flex items-center gap-3 mb-4 text-primary">
+                    <i data-lucide="layout-grid" class="h-6 w-6"></i>
+                    <h3 class="text-xl font-bold">Flooring</h3>
+                </div>
+                <ul class="space-y-2 text-gray-600">
+                    <li>• Carpet & hardwood installation</li>
+                    <li>• Tile laying</li>
+                    <li>• Epoxy flooring</li>
+                    <li>• Underlayment & overlayment</li>
+                </ul>
+            </div>
+
+            <!-- Home Services -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                <div class="flex items-center gap-3 mb-4 text-primary">
+                    <i data-lucide="home" class="h-6 w-6"></i>
+                    <h3 class="text-xl font-bold">Home Services</h3>
+                </div>
+                <ul class="space-y-2 text-gray-600">
+                    <li>• Residential & commercial moving</li>
+                    <li>• Furniture assembly</li>
+                    <li>• Normal and deep cleaning</li>
+                    <li>• Hanging TVs & housing cables</li>
+                </ul>
+            </div>
+
+            <!-- Auto & Appliance -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                <div class="flex items-center gap-3 mb-4 text-primary">
+                    <i data-lucide="car" class="h-6 w-6"></i>
+                    <h3 class="text-xl font-bold">Auto & Appliance</h3>
+                </div>
+                <ul class="space-y-2 text-gray-600">
+                    <li>• Fixing washers and dryers</li>
+                    <li>• Auto mechanics (no transmission)</li>
+                    <li>• General odd jobs</li>
+                </ul>
+            </div>
+
+            <!-- Important Note -->
+            <div class="bg-orange-50 p-6 rounded-2xl border border-orange-100 flex flex-col justify-center">
+                <h3 class="text-lg font-bold text-gray-800 mb-2 flex items-center gap-2">
+                    <i data-lucide="info" class="text-secondary h-5 w-5"></i> Please Note
+                </h3>
+                <p class="text-gray-700">For legal reasons, I do <b>not</b> offer plumbing services. For everything else, I've got you covered!</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="bg-primary text-white py-12 px-4 text-center mt-8">
+        <h2 class="text-2xl font-bold mb-4">Let's get your to-do list done.</h2>
+        <p class="mb-8 text-blue-100">Shoot me a message for a free estimate.</p>
+        <a href="tel:6822175061" class="inline-block bg-white text-primary px-8 py-4 rounded-xl font-bold text-2xl shadow-lg active:bg-gray-100 w-full sm:w-auto">
+            (682) 217-5061
+        </a>
+        <p class="mt-4 text-sm text-blue-200">Ask for Jay!</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8 px-4 text-center text-sm">
+        <p class="mb-2 font-bold text-white">Jay's Handy Help</p>
+        <p>Serving Haltom City, Watauga, Keller, and surrounding areas.</p>
+        <p class="mt-6">&copy; <script>document.write(new Date().getFullYear())</script> Jay's Handy Help.</p>
+    </footer>
+
+    <!-- Initialize Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
+
+
+```
